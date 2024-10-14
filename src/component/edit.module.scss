@@ -1,0 +1,102 @@
+.form {
+  form {
+    // outline: 2px solid red;
+    display: flex;
+    border-radius: 0.3em 0.3em 0.3em 0.3em;
+    align-items: flex-start;
+    // height: 10.5em;
+    .img {
+      position: relative;
+      > div {
+        width: 8em;
+        img {
+          border-radius: 0.3em 0em 0em 0.3em;
+          width: 8em;
+          height: 10.5em;
+          object-fit: cover;
+        }
+      }
+
+      input {
+        position: absolute;
+        width: 9em;
+        // outline: 2px solid red;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #faf7f0;
+        border-radius: 0.2em;
+      }
+      input::file-selector-button {
+        cursor: pointer;
+        background-color: #faf7f0;
+        border: 0.1em solid #4a4947;
+      }
+    }
+    .content {
+      //   outline: 2px solid blue;
+      background-color: #d8d2c2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-block: 0.8em;
+      border-radius: 0em 0.3em 0.3em 0em;
+      width: 15em;
+      height: 8.9em;
+      position: relative;
+
+      > :nth-child(1) {
+        // outline: 2px solid greenyellow;
+        display: flex;
+        flex-direction: column;
+        padding-inline: 0.5em;
+        gap: 0.5em;
+        label {
+          display: flex;
+          flex-direction: column;
+          color: black;
+          font-size: 1.1em;
+          font-weight: 600;
+          input {
+            border: none;
+            background-color: #d8d2c2;
+            color: black;
+            font-size: 1.2em;
+          }
+        }
+      }
+      &:hover > :nth-child(2) {
+        // outline: 2px solid violet;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+      > :nth-child(2) {
+        // outline: 2px solid green;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        opacity: 0;
+        transition: 0.3s ease-out;
+        transform: translate(-50%, 125%);
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5em;
+        padding-inline: 0.3em;
+
+        input,
+        button {
+          padding-block: 0.2em;
+          padding-inline: 1em;
+          font-size: 1rem;
+          border: 1.5px solid #4a4947;
+          border-radius: 0.5rem;
+          box-shadow: 2.5px 3px 0 #4a4947;
+          outline: none;
+          transition: ease 0.25s;
+          box-shadow: 2.5px 3px 0 #4a4947;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

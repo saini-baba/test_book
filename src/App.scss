@@ -1,0 +1,106 @@
+.book {
+  .heading {
+    background-color: #4a4947;
+    .text {
+      h1 {
+        color: #d8d2c2;
+        text-align: center;
+        padding-block: 0.3em;
+        font-size: 2.5rem;
+      }
+    }
+  }
+  .addform {
+    // outline: 2px solid red;
+    margin-block: 3em;
+
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 25em;
+      margin: auto;
+      //   outline: 2px solid blue;
+      padding-block: 2em;
+      padding-inline: 2em;
+      gap: 1.5em;
+      background-color: #b17457;
+      box-shadow: 4px 4px #4a4947;
+      border: 2px solid #4a4947;
+      border-radius: 0.3em;
+      h2 {
+        text-align: center;
+        color: #faf7f0;
+        font-size: 1.8rem;
+      }
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        > :nth-child(1),
+        > :nth-child(2) {
+          font-size: 1.2rem;
+          input {
+            width: 100%;
+            padding-block: 0.2em;
+            padding-inline: 0.5em;
+            font-size: 1.2rem;
+            border: 1.5px solid #4a4947;
+            border-radius: 0.5rem;
+            box-shadow: 2.5px 3px 0 #4a4947;
+            outline: none;
+            transition: ease 0.25s;
+            box-shadow: 2.5px 3px 0 #4a4947;
+
+            &:focus {
+              box-shadow: 5.5px 7px 0 #4a4947;
+            }
+          }
+        }
+        > :nth-child(3) {
+          font-size: 1.2rem;
+          display: flex;
+          flex-direction: column;
+          input {
+            // outline: 2px solid red;
+            padding-block: 0.1em;
+          }
+          input::file-selector-button {
+            padding-block: 0.2em;
+            padding-inline: 0.5em;
+            font-size: 1.2rem;
+            border: 1.5px solid #4a4947;
+            border-radius: 0.5rem;
+            box-shadow: 2.5px 3px 0 #4a4947;
+            outline: none;
+            transition: ease 0.25s;
+            box-shadow: 2.5px 3px 0 #4a4947;
+            cursor: pointer;
+          }
+        }
+        > :nth-child(4) {
+          //   outline: 2px solid red;
+          display: flex;
+          justify-content: center;
+          input {
+            padding-block: 0.2em;
+            padding-inline: 1em;
+            font-size: 1.2rem;
+            border: 1.5px solid #4a4947;
+            border-radius: 0.5rem;
+            box-shadow: 2.5px 3px 0 #4a4947;
+            outline: none;
+            transition: ease 0.25s;
+            box-shadow: 2.5px 3px 0 #4a4947;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .card {
+    display: flex;
+    gap: 2em;
+    flex-wrap: wrap;
+  }
+}
